@@ -1,0 +1,285 @@
+/* 
+Sizing
+font size (px)
+20 - main / 24 / 28 / 32
+
+
+line-height
+1.6 -standard text
+
+
+**********************
+Spacing
+48 / 64 / 126
+**********************
+Colors
+#333
+
+#13275f - dark
+#172f72 - brighter
+*/
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+
+.secondary-header {
+  font-size: 3.2rem;
+  /* color: #13275f; */
+  color: #374151;
+
+  padding-bottom: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: #444 dotted 1px;
+  border-bottom: #444 dotted 1px;
+  margin-bottom: 3rem;
+}
+.tertiary-header {
+  font-size: 2.6rem;
+  color: #333;
+  margin-bottom: 1.4rem;
+}
+
+.auto-margins {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.basic-view {
+  width: 130rem;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 4.2rem;
+  background-color: rgb(240, 240, 240);
+}
+
+/*  */
+/* ********************************************** */
+/* ABOUT SECTION */
+/* *********************************************** */
+/*  */
+
+.about {
+}
+
+.about-name {
+  font-size: 4.2rem;
+  font-weight: 560;
+  color: #222;
+  letter-spacing: 1px;
+  padding: 1rem 0 2rem 0;
+}
+
+.about-position {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.about-description {
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.right-column {
+  background-color: rgb(240, 240, 240);
+  padding-top: 12.6rem;
+  padding-right: 12.6rem;
+  padding: 12.6rem 12.6rem 12.6rem 0;
+  flex-direction: column;
+  gap: 7.2rem;
+}
+
+.project-list {
+  padding-left: 0;
+  line-height: 1.6;
+  padding-bottom: 2.4rem;
+}
+.project {
+  gap: 2rem;
+  align-content: center;
+  align-items: center;
+}
+
+.githubAndArrow {
+  align-items: center;
+  gap: 2rem;
+}
+
+.larrow {
+  color: rgb(155, 15, 15);
+  font-size: 3rem;
+  /* animation: fromRightSlide; */
+  /* animation-duration: 2s; */
+}
+
+.project-link:link,
+.project-link:visited,
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #1e3a8a;
+
+  transition: color 0.3s, box-shadow 0.5s;
+}
+
+.project-link:hover,
+.link:hover {
+  color: rgb(153, 130, 87);
+  box-shadow: 0px 1px 1px rgb(153, 130, 87);
+}
+
+.github-link:link,
+.github-link:visited {
+  font-weight: 600;
+}
+
+/*  */
+
+@keyframes fromRightSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4.5rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animation {
+  animation: fromRightSlide;
+  animation-duration: 1.6s;
+  animation-delay: 0ms;
+}
+
+/* EXPERIENCE */
+/* .experience {
+  padding-top: 9rem;
+} */
+
+.experience .tertiary-header {
+  padding-top: 3.2rem;
+}
+
+.courses-list {
+  flex-direction: column;
+  gap: 1rem;
+
+  /* padding-left: 0; */
+}
+
+.course {
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.course-author {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #444;
+  font-style: italic;
+}
+
+.course-name {
+  margin: 0;
+}
+.course.link {
+  line-height: 1.2;
+}
+
+li {
+  width: fit-content;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-left: 2rem;
+}
+
+/* .right-col-section {
+  border-top: dotted 1px rgba(51, 51, 51, 0.555);
+} */
+
+.date {
+  font-size: 1.8rem;
+  color: #444;
+  font-style: italic;
+}
+.proffesion-name {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.employer {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.8;
+}
+.responsibilities-list {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.previous-job {
+}
+.previous-job-name {
+}
+
+/* LEFT COLUMN */
+
+.left-column {
+  background-color: rgb(117, 126, 126);
+  flex-direction: column;
+  gap: 4.8rem;
+
+  background-color: #172f72;
+  background-color: #374151;
+
+  color: white;
+}
+
+.image-box {
+  width: 43rem;
+
+  padding: 3.2rem 3.2rem 0;
+}
+
+.my-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.l-side-header {
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #1f293793;
+  padding: 1rem 3.2rem;
+  margin-bottom: 1.4rem;
+}
+.l-side-text {
+  font-size: 2rem;
+  padding-left: 3.2rem;
+  line-height: 1.6;
+}
+.l-side-list {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
