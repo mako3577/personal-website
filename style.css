@@ -1,22 +1,40 @@
 /* 
 Sizing
+*************
+
 font size (px)
-20 - main / 24 / 28 / 32
+20 for standard text
+16, 20, 22, 24, 28, 30, 34, 42
 
 
 line-height
-1.6 -standard text
+1.6 - standard
 
 
 **********************
-Spacing
-48 / 64 / 126
+paddings / margins (px)
+10, 14, 20, 32, 42, 72, 100, 126
+
 **********************
+
+
+
+***************
 Colors
-#333
+******
+#222 - darker text - name + <strong> description
+#333 - standard text color
+#374151 - left column background color / secondary header
+#1f293793 - darker left side background color / l-side header background
+#444 - border lines color
+#1e3a8a - links
+#998257 - links hover
 
-#13275f - dark
-#172f72 - brighter
+#f0f0f0- main backgroud color
+
+
+
+
 */
 
 * {
@@ -38,8 +56,7 @@ html {
 }
 
 .secondary-header {
-  font-size: 3.2rem;
-  /* color: #13275f; */
+  font-size: 3.4rem;
   color: #374151;
 
   padding-bottom: 1.4rem;
@@ -48,11 +65,12 @@ html {
   border-bottom: #444 dotted 1px;
   margin-bottom: 3.2rem;
 }
-.tertiary-header {
+
+/* .tertiary-header {
   font-size: 2.6rem;
   color: #333;
   margin-bottom: 1.4rem;
-}
+} */
 
 .auto-margins {
   margin-left: auto;
@@ -63,7 +81,7 @@ html {
   width: 122rem;
   grid-template-columns: 1.2fr 3fr;
   column-gap: 4.2rem;
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
 }
 
 /*  */
@@ -92,7 +110,7 @@ html {
 }
 
 .about-description strong {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #222;
 }
 
@@ -109,7 +127,7 @@ html {
 }
 
 .right-column {
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
   padding-top: 12.6rem;
   padding-right: 10rem;
   padding: 12.6rem 12.6rem 12.6rem 0;
@@ -153,7 +171,7 @@ html {
 
 .project-link:hover,
 .link:hover {
-  color: rgb(153, 130, 87);
+  color: #998257;
   box-shadow: 0px 1px 1px rgb(153, 130, 87);
   /* color: #02113a; */
 }
@@ -210,7 +228,7 @@ li {
 } */
 
 .date {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #444;
   font-style: italic;
 }
@@ -228,7 +246,7 @@ li {
   line-height: 1.8;
 }
 .responsibilities-list {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
 }
 
@@ -237,13 +255,10 @@ li {
 /* ************ */
 
 .left-column {
-  background-color: rgb(117, 126, 126);
   flex-direction: column;
   gap: 4.8rem;
 
-  background-color: #172f72;
   background-color: #374151;
-
   color: white;
 }
 
