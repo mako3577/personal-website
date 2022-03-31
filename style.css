@@ -42,11 +42,11 @@ html {
   /* color: #13275f; */
   color: #374151;
 
-  padding-bottom: 1.6rem;
-  padding-top: 1.6rem;
+  padding-bottom: 1.4rem;
+  padding-top: 1.4rem;
   border-top: #444 dotted 1px;
   border-bottom: #444 dotted 1px;
-  margin-bottom: 3rem;
+  margin-bottom: 3.2rem;
 }
 .tertiary-header {
   font-size: 2.6rem;
@@ -60,8 +60,8 @@ html {
 }
 
 .basic-view {
-  width: 130rem;
-  grid-template-columns: 1fr 3fr;
+  width: 122rem;
+  grid-template-columns: 1.2fr 3fr;
   column-gap: 4.2rem;
   background-color: rgb(240, 240, 240);
 }
@@ -71,9 +71,6 @@ html {
 /* ABOUT SECTION */
 /* *********************************************** */
 /*  */
-
-.about {
-}
 
 .about-name {
   font-size: 4.2rem;
@@ -94,10 +91,27 @@ html {
   line-height: 1.6;
 }
 
+.about-description strong {
+  font-size: 2.2rem;
+  color: #222;
+}
+
+.ol {
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 1rem;
+  padding-bottom: 3.2rem;
+}
+
+.li-checked {
+  text-decoration: line-through rgba(51, 51, 51, 0.226);
+}
+
 .right-column {
   background-color: rgb(240, 240, 240);
   padding-top: 12.6rem;
-  padding-right: 12.6rem;
+  padding-right: 10rem;
   padding: 12.6rem 12.6rem 12.6rem 0;
   flex-direction: column;
   gap: 7.2rem;
@@ -106,7 +120,7 @@ html {
 .project-list {
   padding-left: 0;
   line-height: 1.6;
-  padding-bottom: 2.4rem;
+  padding-bottom: 2rem;
 }
 .project {
   gap: 2rem;
@@ -122,8 +136,8 @@ html {
 .larrow {
   color: rgb(155, 15, 15);
   font-size: 3rem;
-  /* animation: fromRightSlide; */
-  /* animation-duration: 2s; */
+
+  animation: infinite fromRightSlide 2.2s;
 }
 
 .project-link:link,
@@ -150,31 +164,9 @@ html {
   transform: translateY(2px);
 }
 
-/*  */
-
-@keyframes fromRightSlide {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(4.5rem);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.animation {
-  animation: fromRightSlide;
-  animation-duration: 1.6s;
-  animation-delay: 0ms;
-}
-
+/* *********** */
 /* EXPERIENCE */
-/* .experience {
-  padding-top: 9rem;
-} */
+/* *********** */
 
 .experience .tertiary-header {
   padding-top: 3.2rem;
@@ -240,12 +232,9 @@ li {
   color: #333;
 }
 
-.previous-job {
-}
-.previous-job-name {
-}
-
+/* ************ */
 /* LEFT COLUMN */
+/* ************ */
 
 .left-column {
   background-color: rgb(117, 126, 126);
@@ -260,9 +249,8 @@ li {
 
 .image-box {
   width: 100%;
-
   padding: 3.6rem 3.6rem 0 3.6rem;
-  /* flex-grow: 0; */
+  transform: translateY(0.6rem);
 }
 
 .my-photo {
@@ -284,10 +272,24 @@ li {
   line-height: 1.6;
 }
 .l-side-list {
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
+  padding: 0 3.2rem;
 }
 
 ul {
   list-style: square;
+}
+
+/* ANIMATIONS */
+
+@keyframes fromRightSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4.5rem);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
