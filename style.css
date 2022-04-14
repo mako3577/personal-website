@@ -107,6 +107,11 @@ html {
   font-size: 2rem;
   color: #333;
   line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-description:last-child {
+  margin-bottom: 0;
 }
 
 .about-description strong {
@@ -182,6 +187,68 @@ html {
   transform: translateY(2px);
 }
 
+.projects-gallery {
+  display: flex;
+  background-color: red;
+  height: 320px;
+  width: 650px;
+
+  margin: 3.2rem auto 0 auto;
+
+  position: relative;
+}
+.gallery-wrap {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.first-project-img {
+  z-index: 2;
+}
+
+.gallery-btn-img {
+  width: 4rem;
+  height: 4rem;
+  font-weight: 500;
+  transform: translate(-1px, 1px);
+}
+
+.gallery-button {
+  position: absolute;
+
+  padding: 1rem;
+  border: 1px rgba(68, 68, 68, 0.11) solid;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  z-index: 9999999999;
+}
+
+.gallery-button:hover {
+  background: rgba(136, 136, 136, 0.15);
+}
+
+.gallery-button-left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-button-right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(180deg);
+}
 /* *********** */
 /* EXPERIENCE */
 /* *********** */
@@ -306,5 +373,41 @@ ul {
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes imgAnimationRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes imgAnimationRightOld {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes imgAnimationLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes imgAnimationLeftOld {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }

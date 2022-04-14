@@ -15,11 +15,7 @@
           <div class="left-column-container">
             <div class="image-box">
               <!-- <img alt="photo of me" class="my-photo" src="images/man.jpg" /> -->
-              <img
-                alt="photo of me"
-                class="my-photo"
-                src="images/DSC_9157-2.jpg"
-              />
+              <img alt="photo of me" class="my-photo" src="images/DSC_9157-2.jpg" />
             </div>
           </div>
           <div class="contact">
@@ -32,17 +28,17 @@
             <ul class="l-side-list">
               <li>HTML</li>
               <li>CSS</li>
-              <li>Podstawy JavaScript</li>
+              <li>JavaScript</li>
+              <li>Github</li>
               <li>Podstawy Python3</li>
               <li>Podstawy SQL</li>
               <li>Responsive web design</li>
+              <li>Podstawy Webpack</li>
             </ul>
           </div>
           <div class="languages">
             <p class="l-side-header">Języki obce</p>
-            <p class="l-side-text">
-              Język angielski (B1 - B2) <strong></strong>
-            </p>
+            <p class="l-side-text">Język angielski (B1 - B2) <strong></strong></p>
           </div>
           <div class="hobby">
             <p class="l-side-header">Zainteresowania</p>
@@ -50,7 +46,6 @@
               <li>Piłka nożna - jako kibic oraz amatorski zawodnik</li>
               <li>Gry planszowe</li>
               <li>Gry komputerowe</li>
-              <li>Drony</li>
               <li>Gotowanie i podróże z elementami kulinarnymi</li>
             </ul>
           </div>
@@ -62,30 +57,34 @@
           <div class="about">
             <p class="about-position">Front-End Developer</p>
             <p class="about-name">Mateusz Lazaru</p>
-            <p class="about-description"> <strong>
-              Ułożyłem dla siebie plan złożony z trzech kluczowych punktów:</strong>
-              <ol class="ol">
-<li class="li-checked">Zdobyć umiejętności, które pozwolą mi na samodzielną pracę jako Front-end Web Developer</li>
-<li>Znaleźć pracę, która pozwoli mi wykazać się tymi umiejętnościami i postawi przede mną
-nowe wyzwania</li>
-<li>Uczyć się dalej, być na bieżąco z nowościami, aby pozostać ekspertem w swoim zawodzie</li>
-</ol>
-<p class="about-description">Do tej pory udało mi się spełnić punkt pierwszy, ale jestem zdeterminowany, żeby
-spełnić plan w całości.</p>
+            <p class="about-description">
+              Moja przygoda z programowaniem zaczęła się od kursu Pythona, podczas którego odkrysłem
+              swoją pasję. Stworzyłem w tym języku kilka małych projektów, niektóre są dostępne na
+              moim githubie. Robiłem to dla zabawy, nie wiążąc z tym przyszłości zawodowej.
+            </p>
+
+            <p class="about-description">
+              <strong
+                >Jednak moim marzeniem jest praca, która będzie sprawiać mi przyjemność - dlatego
+                chcę rozwijać się jako programista.</strong
+              >
+            </p>
+            <p class="about-description">
+              W międzyczasie nieco zmieniłem kierunek kształcenia i poznałem HTML, CSS, JS - teraz
+              już wiem, że frontend to jest to, co najbardziej mnie cieszy. Z użyciem tych języków
+              tworzę obecnie aplikacje webowe i strony internetowe. Mam ogromny zapał do nauki,
+              pasję i umiejętność szybkiego uczenia się.
             </p>
           </div>
           <div class="projects right-col-section">
             <h2 class="secondary-header">Przykładowe projekty</h2>
             <ul class="project-list">
               <li class="project">
-                <a
-                  href="https://ml-omnifood.netlify.app"
-                  target="blank"
-                  class="project-link link"
+                <a href="https://ml-omnifood.netlify.app" target="blank" class="project-link link"
                   >Omnifood - startup dostarczający jedzenie pudełkowe</a
                 >
               </li>
-                            <li class="project">
+              <li class="project">
                 <a
                   href="https://pc-configurator.netlify.app"
                   target="blank"
@@ -94,30 +93,56 @@ spełnić plan w całości.</p>
                 >
               </li>
               <li class="project">
-                <a
-                  href="https://duck-shooter.netlify.app"
-                  target="blank"
-                  class="project-link link"
-                  >Duck-shooter - prosta gra typu 2D-Shooter. Ćwiczenie JS.</a
-                >
-              </li>
-              <li class="project">
-                <a
-                  href="https://hotel-marmur.netlify.app"
-                  target="blank"
-                  class="project-link link"
-                  >Hotel marmur - w trakcie realizacji</a
+                <a href="https://duck-shooter.netlify.app" target="blank" class="project-link link"
+                  >Duck-shooter - gra typu 2D-Shooter. Ćwiczenie JS.</a
                 >
               </li>
             </ul>
             <div class="githubAndArrow flex">
-              <a
-                class="github-link link"
-                target="blank"
-                href="https://github.com/mako3577"
+              <a class="github-link link" target="blank" href="https://github.com/mako3577"
                 >Mój github
               </a>
               <div class="larrow">&larr;</div>
+            </div>
+            <div class="projects-gallery">
+              <div class="gallery-wrap">
+                <img
+                  class="project-img active first-project-img"
+                  src="omnifood.PNG"
+                  alt="omnifood project preview"
+                />
+                <img class="project-img" src="pc-builder.PNG" alt="pc-builder project preview" />
+                <img
+                  class="project-img"
+                  src="duck-shooter.PNG"
+                  alt="duck-shooter project preview"
+                />
+              </div>
+              <button class="gallery-button gallery-button-left">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="gallery-btn-img"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+
+              <button class="gallery-button gallery-button-right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="gallery-btn-img"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
             </div>
           </div>
           <!-- Experience -->
@@ -169,28 +194,21 @@ spełnić plan w całości.</p>
 
             <p class="employer">PZU S.A, Warszawa</p>
             <p class="date">02.2017 - 07.2021</p>
-            <p class="proffesion-name">
-              Pracownik obsługi klienta / Agent ubezpieczeniowy
-            </p>
+            <p class="proffesion-name">Pracownik obsługi klienta / Agent ubezpieczeniowy</p>
 
             <ul class="responsibilities-list">
               <li>Sprzedaż ubezpieczeń nowym i aktualnym klientom</li>
               <li>Kompleksowa obsługa klienta z zakresu usług assistance</li>
               <li>Weryfikacja polis ubezpieczeniowych</li>
               <li>Współpraca z innymi zespołami</li>
-              <li>
-                Pomaganie klientom w obsłudze platformy internetowej firmy
-              </li>
-              <li>
-                Udział w ulepszaniu serwisu poprzez raportowanie błędów i
-                zgłaszanie pomysłów
-              </li>
+              <li>Pomaganie klientom w obsłudze platformy internetowej firmy</li>
+              <li>Udział w ulepszaniu serwisu poprzez raportowanie błędów i zgłaszanie pomysłów</li>
             </ul>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
